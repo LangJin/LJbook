@@ -19,27 +19,32 @@ npm config set registry=http://registry.npm.taobao.org   # 把npm镜像设置到
 ```
 
 ## Vue的安装
-安装vue：npm install vue -g
-安装vue-router：npm install vue-router -g
-安装vue脚手架：npm install vue-cli -g
+- 安装vue：npm install vue -g
+- 安装vue-router：npm install vue-router -g
+- 安装vue脚手架：npm install vue-cli -g
 
 ## Vue的运行
-进入项目路径，npm run dev
+- 进入项目路径，npm run dev
 
 ## 踩坑
-1、安装版本请务必按照官方提供的稳定版进行安装。
-2、请务必不要去升级任何组件。
-3、请不要安装在C盘。
+- 1、安装版本请务必按照官方提供的稳定版进行安装。
+- 2、请务必不要去升级任何组件。
+- 3、请不要安装在C盘。
 
 # Vue学习
 ## 项目结构
-![](/source/img/Vue环境搭建/2020-07-13-19-29-19.png)
-1、assets是放静态资源的，比如图片
-2、components是放子组件的（页面内的组件）
-3、router放路由接口相关的。
-4、App.vue是主页面组件。
-5、main.js是主页代码
-6、index.html是首页。
+![](/source/img/Vue学习笔记/2020-07-14-01-19-18.png)
+- assets 静态资源
+- components 子组件
+- icons  图标
+- router 路由
+- store 状态
+- styles  样式
+- utils 公共方法
+- views 视图
+- App.vue 主页面组件
+- main.js 程序入口
+- index.html 首页
 
 ## 关键字说明
 ### Vue实例关键字
@@ -73,12 +78,12 @@ npm config set registry=http://registry.npm.taobao.org   # 把npm镜像设置到
     })
 </script>
 ```
-name：方法名
-el：挂载点
-data：数据，可以理解成定义内部变量
-methods：方法，可以理解成python的类中的成员方法
-template：模板（组件）
-props：参数接收器，可以往组件中传参。理解成python的__init__()方法。
+- name：方法名
+- el：挂载点
+- data：数据，可以理解成定义内部变量
+- methods：方法，可以理解成python的类中的成员方法
+- template：模板（组件）
+- props：参数接收器，可以往组件中传参。理解成python的__init__()方法。
 ### Vue组件关键字
 ```html
 <div id="root">
@@ -90,9 +95,9 @@ props：参数接收器，可以往组件中传参。理解成python的__init__(
     
 </div>
 ```
-v-for="(item,index) of xlist" ：从xlist这个数组中循环值和下标。
-:name="张三" ：定义一个变量叫name，并复制张三，如果张三是个变量，则显示变量值。
-@call="delete"：调用delete这个方法，并给方法取名为call。
+- v-for="(item,index) of xlist" ：从xlist这个数组中循环值和下标。
+- :name="张三" ：定义一个变量叫name，并复制张三，如果张三是个变量，则显示变量值。
+- @call="delete"：调用delete这个方法，并给方法取名为call。
 ### Vue的样式
 ```css
 <style scoped>
@@ -101,11 +106,14 @@ h1, h2 {
 }
 </style>
 ```
-scoped：声明这个样式只对当前组件生效
+- scoped：声明这个样式只对当前组件生效
 ### Vue组件的导入
 ```js
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 ```
-import 组件名 from 路径/组件名
+- import 组件名 from 路径/组件名
+### Vue重要常用包
+- vue-router  路由管理
+- Axios  接口管理
