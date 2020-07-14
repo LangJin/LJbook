@@ -118,3 +118,7 @@ import HelloWorld from '@/components/HelloWorld'
 ### Vue重要常用包
 - vue-router  路由管理
 - Axios  接口管理
+
+
+### 坑
+路由切换url 中有一个"#"号，它是哪来的呢？这是因为 vue-router 默认使用 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL。#号在浏览器的 URL 中是一个锚点，在当前页改变"#"号的参数，页面会跳转到锚点所在的位置，通过 JavaScript 我们可以获取到"#"号后的参数： location.hash // 获取URL hash location.hash = "#list" //改变URL hash copy 当 URL 改变时，页面不会重新加载。 有这个"#"号，虽然不影响功能，但看起来有点奇怪，处女座一定不能忍。要消除这个"#"号，需要做一下配置，修改 router/index.js： export default new Router({ mode: 'history', routes: routes })
