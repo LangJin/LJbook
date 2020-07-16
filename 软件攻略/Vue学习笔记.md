@@ -118,7 +118,14 @@ import HelloWorld from '@/components/HelloWorld'
 - import 组件名 from 路径/组件名
 ### Vue重要常用包
 - vue-router  路由管理
-- Axios  接口管理
+https://www.cnblogs.com/92xcd/p/9933457.html
+- axios  操作接口的
+https://www.cnblogs.com/art-poet/p/12502113.html
+- vue-cookies  操作cookies的
+https://www.jianshu.com/p/60c13168cc8f
+- 自定义js包
+https://blog.csdn.net/qq_29483485/article/details/86605215
+
 
 ### 项目结构
 index.html是项目静态文件所有的页面的挂载点。
