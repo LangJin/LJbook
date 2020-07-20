@@ -123,6 +123,8 @@ https://www.cnblogs.com/92xcd/p/9933457.html
 https://www.cnblogs.com/art-poet/p/12502113.html
 - vue-cookies  操作cookies的
 https://www.jianshu.com/p/60c13168cc8f
+- element-ui
+https://element.faas.ele.me/#/zh-CN
 - 自定义js包
 https://blog.csdn.net/qq_29483485/article/details/86605215
 
@@ -135,3 +137,12 @@ APP.vue挂载到index.html中。
 
 ### 坑
 路由切换url 中有一个"#"号，它是哪来的呢？这是因为 vue-router 默认使用 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL。#号在浏览器的 URL 中是一个锚点，在当前页改变"#"号的参数，页面会跳转到锚点所在的位置，通过 JavaScript 我们可以获取到"#"号后的参数： location.hash // 获取URL hash location.hash = "#list" //改变URL hash copy 当 URL 改变时，页面不会重新加载。 有这个"#"号，虽然不影响功能，但看起来有点奇怪，处女座一定不能忍。要消除这个"#"号，需要做一下配置，修改 router/index.js： export default new Router({ mode: 'history', routes: routes })
+
+
+#### 参考资料
+vue中使用element-ui进行表单验证
+https://blog.csdn.net/sunhuaqiang1/article/details/85235441
+第一个 ElementUI 页面 (登录页)
+https://www.jianshu.com/p/96143f0917aa
+vue中export和export default的使用
+https://blog.51cto.com/11871779/2348288
