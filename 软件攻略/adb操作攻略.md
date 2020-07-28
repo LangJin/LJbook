@@ -28,7 +28,7 @@ adb通过USB线连接成功后，则可以通过设置，把有线变成无线�
 2、查看手机局域网IP  adb shell netcfg
 ![](images/2020-07-27-11-02-37.png)
 3、启动手机远程服务并连接
-adb tcpid 端口号
+adb tcpip 端口号
 adb connect ip:端口
 ![](images/2020-07-27-11-04-51.png)
 4、检查是否连接成功
