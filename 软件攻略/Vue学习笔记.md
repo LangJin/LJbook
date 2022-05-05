@@ -35,7 +35,7 @@ npm config set registry=http://registry.npm.taobao.org   # 把npm镜像设置到
 
 # Vue学习
 ## 项目结构
-![](/source/img/Vue学习笔记/2020-07-14-01-19-18.png)
+![](D:\workhome\WikiPro\LJbook\source\img\Vue学习笔记\2020-07-14-01-19-18.png)
 - assets 静态资源
 - components 子组件
 - icons  图标
